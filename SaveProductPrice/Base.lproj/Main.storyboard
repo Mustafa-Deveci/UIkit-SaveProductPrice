@@ -49,20 +49,36 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="click" translatesAutoresizingMaskIntoConstraints="NO" id="l5n-fr-L0k">
-                                <rect key="frame" x="25" y="103" width="343" height="253"/>
+                                <rect key="frame" x="25" y="103" width="335" height="256"/>
                             </imageView>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Product Price" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cPw-81-WcU">
-                                <rect key="frame" x="25" y="456" width="343" height="50"/>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Product Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uC0-3b-FgL">
+                                <rect key="frame" x="25" y="367" width="335" height="50"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="bRk-ao-dWc"/>
+                                    <constraint firstAttribute="height" constant="50" id="1x1-UP-L4r"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IHq-py-mIb">
-                                <rect key="frame" x="166" y="641" width="61" height="33"/>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Product Price" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cPw-81-WcU">
+                                <rect key="frame" x="25" y="425" width="335" height="50"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="33" id="osH-vl-Nb0"/>
+                                    <constraint firstAttribute="height" constant="50" id="FYg-Zi-Xjg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <datePicker contentMode="top" contentHorizontalAlignment="leading" contentVerticalAlignment="fill" datePickerMode="date" translatesAutoresizingMaskIntoConstraints="NO" id="6y9-k0-hu6">
+                                <rect key="frame" x="131" y="494" width="123" height="53"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="53" id="XfH-vU-i51"/>
+                                    <constraint firstAttribute="width" constant="130" id="zGP-V0-nCU"/>
+                                </constraints>
+                                <locale key="locale" localeIdentifier="en_BN"/>
+                            </datePicker>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IHq-py-mIb">
+                                <rect key="frame" x="162" y="605" width="61" height="33"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="33" id="wYk-IT-2wB"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Save"/>
@@ -70,44 +86,31 @@
                                     <action selector="saveButton:" destination="EX0-Z1-52A" eventType="touchUpInside" id="o5d-WT-9YJ"/>
                                 </connections>
                             </button>
-                            <datePicker contentMode="top" contentHorizontalAlignment="leading" contentVerticalAlignment="fill" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="6y9-k0-hu6">
-                                <rect key="frame" x="107" y="539" width="179" height="53"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="53" id="eBK-Zy-kYs"/>
-                                </constraints>
-                                <locale key="locale" localeIdentifier="en_BN"/>
-                            </datePicker>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Product Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uC0-3b-FgL">
-                                <rect key="frame" x="25" y="382" width="343" height="50"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="0E6-aW-Iox"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="1YR-nx-diZ"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="l5n-fr-L0k" firstAttribute="leading" secondItem="1YR-nx-diZ" secondAttribute="leading" constant="25" id="2ha-38-xbN"/>
-                            <constraint firstItem="cPw-81-WcU" firstAttribute="top" secondItem="uC0-3b-FgL" secondAttribute="bottom" constant="24" id="4ct-Pw-LNl"/>
-                            <constraint firstItem="cPw-81-WcU" firstAttribute="centerX" secondItem="6y9-k0-hu6" secondAttribute="centerX" id="7fW-C5-Zhd"/>
-                            <constraint firstItem="uC0-3b-FgL" firstAttribute="top" secondItem="l5n-fr-L0k" secondAttribute="bottom" constant="26" id="Cgt-Gq-M8M"/>
-                            <constraint firstItem="l5n-fr-L0k" firstAttribute="trailing" secondItem="uC0-3b-FgL" secondAttribute="trailing" id="DJh-ab-Zqq"/>
-                            <constraint firstItem="l5n-fr-L0k" firstAttribute="centerX" secondItem="Yev-aZ-DhS" secondAttribute="centerX" id="Dbs-Z4-A4O"/>
-                            <constraint firstItem="l5n-fr-L0k" firstAttribute="top" secondItem="1YR-nx-diZ" secondAttribute="top" id="J65-zA-ufn"/>
-                            <constraint firstItem="l5n-fr-L0k" firstAttribute="leading" secondItem="uC0-3b-FgL" secondAttribute="leading" id="S75-3A-7mP"/>
-                            <constraint firstItem="uC0-3b-FgL" firstAttribute="leading" secondItem="cPw-81-WcU" secondAttribute="leading" id="Wqq-Ly-XfG"/>
-                            <constraint firstItem="6y9-k0-hu6" firstAttribute="centerX" secondItem="IHq-py-mIb" secondAttribute="centerX" id="Xm6-dU-34D"/>
-                            <constraint firstItem="1YR-nx-diZ" firstAttribute="bottom" secondItem="IHq-py-mIb" secondAttribute="bottom" constant="144" id="gIn-6S-kZJ"/>
-                            <constraint firstItem="IHq-py-mIb" firstAttribute="top" secondItem="6y9-k0-hu6" secondAttribute="bottom" constant="49" id="lBJ-24-Suw"/>
-                            <constraint firstItem="6y9-k0-hu6" firstAttribute="top" secondItem="cPw-81-WcU" secondAttribute="bottom" constant="33" id="pMM-vW-WUP"/>
-                            <constraint firstItem="uC0-3b-FgL" firstAttribute="trailing" secondItem="cPw-81-WcU" secondAttribute="trailing" id="riR-m4-kmH"/>
-                            <constraint firstItem="6y9-k0-hu6" firstAttribute="leading" secondItem="1YR-nx-diZ" secondAttribute="leading" constant="107" id="wcY-Q2-fxG"/>
+                            <constraint firstItem="6y9-k0-hu6" firstAttribute="top" secondItem="cPw-81-WcU" secondAttribute="bottom" constant="19" id="1qe-Gn-wqt"/>
+                            <constraint firstItem="6y9-k0-hu6" firstAttribute="centerX" secondItem="Yev-aZ-DhS" secondAttribute="centerX" id="Bay-ev-7VF"/>
+                            <constraint firstItem="l5n-fr-L0k" firstAttribute="leading" secondItem="1YR-nx-diZ" secondAttribute="leading" constant="25" id="FkL-vO-4iV"/>
+                            <constraint firstItem="l5n-fr-L0k" firstAttribute="top" secondItem="1YR-nx-diZ" secondAttribute="top" id="JIq-Je-J30"/>
+                            <constraint firstItem="l5n-fr-L0k" firstAttribute="trailing" secondItem="uC0-3b-FgL" secondAttribute="trailing" id="PSM-WL-DLZ"/>
+                            <constraint firstItem="IHq-py-mIb" firstAttribute="top" secondItem="6y9-k0-hu6" secondAttribute="bottom" constant="58" id="QhZ-ls-l3v"/>
+                            <constraint firstItem="6y9-k0-hu6" firstAttribute="leading" secondItem="1YR-nx-diZ" secondAttribute="leading" constant="131" id="QlI-gV-Rr6"/>
+                            <constraint firstItem="uC0-3b-FgL" firstAttribute="trailing" secondItem="cPw-81-WcU" secondAttribute="trailing" id="Zat-jo-xRY"/>
+                            <constraint firstItem="l5n-fr-L0k" firstAttribute="leading" secondItem="uC0-3b-FgL" secondAttribute="leading" id="gHt-Ko-dP7"/>
+                            <constraint firstItem="uC0-3b-FgL" firstAttribute="leading" secondItem="cPw-81-WcU" secondAttribute="leading" id="hOz-DA-uqn"/>
+                            <constraint firstItem="1YR-nx-diZ" firstAttribute="bottom" secondItem="IHq-py-mIb" secondAttribute="bottom" constant="180" id="hce-f6-mpN"/>
+                            <constraint firstItem="uC0-3b-FgL" firstAttribute="top" secondItem="l5n-fr-L0k" secondAttribute="bottom" constant="8" id="neA-P4-qao"/>
+                            <constraint firstItem="cPw-81-WcU" firstAttribute="centerX" secondItem="6y9-k0-hu6" secondAttribute="centerX" id="op2-Eh-WlM"/>
+                            <constraint firstItem="6y9-k0-hu6" firstAttribute="centerX" secondItem="IHq-py-mIb" secondAttribute="centerX" id="skd-Eb-UnP"/>
+                            <constraint firstItem="cPw-81-WcU" firstAttribute="top" secondItem="uC0-3b-FgL" secondAttribute="bottom" constant="8" id="uB6-Jl-Qcb"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Sh7-Xl-Y3c"/>
                     <connections>
+                        <outlet property="SaveButton" destination="IHq-py-mIb" id="owK-62-cDX"/>
+                        <outlet property="datePicker" destination="6y9-k0-hu6" id="gjD-yF-gTV"/>
                         <outlet property="imageView" destination="l5n-fr-L0k" id="L6Z-Sz-87X"/>
                         <outlet property="nameTextField" destination="uC0-3b-FgL" id="fz3-bF-33c"/>
                         <outlet property="priceTextField" destination="cPw-81-WcU" id="rER-8F-Gm9"/>
