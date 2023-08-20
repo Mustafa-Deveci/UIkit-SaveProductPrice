@@ -14,6 +14,7 @@
 		6A45CA822A91D47F001CB81E /* SaveProductPrice.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6A45CA802A91D47F001CB81E /* SaveProductPrice.xcdatamodeld */; };
 		6A45CA842A91D480001CB81E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6A45CA832A91D480001CB81E /* Assets.xcassets */; };
 		6A45CA872A91D480001CB81E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A45CA852A91D480001CB81E /* LaunchScreen.storyboard */; };
+		6ABFC2162A91D64C004C7D2A /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ABFC2152A91D64C004C7D2A /* DetailsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		6A45CA832A91D480001CB81E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6A45CA862A91D480001CB81E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6A45CA882A91D480001CB81E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6ABFC2152A91D64C004C7D2A /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 				6A45CA772A91D47F001CB81E /* AppDelegate.swift */,
 				6A45CA792A91D47F001CB81E /* SceneDelegate.swift */,
 				6A45CA7B2A91D47F001CB81E /* ViewController.swift */,
+				6ABFC2152A91D64C004C7D2A /* DetailsViewController.swift */,
 				6A45CA7D2A91D47F001CB81E /* Main.storyboard */,
 				6A45CA832A91D480001CB81E /* Assets.xcassets */,
 				6A45CA852A91D480001CB81E /* LaunchScreen.storyboard */,
@@ -143,6 +146,7 @@
 			files = (
 				6A45CA822A91D47F001CB81E /* SaveProductPrice.xcdatamodeld in Sources */,
 				6A45CA7C2A91D47F001CB81E /* ViewController.swift in Sources */,
+				6ABFC2162A91D64C004C7D2A /* DetailsViewController.swift in Sources */,
 				6A45CA782A91D47F001CB81E /* AppDelegate.swift in Sources */,
 				6A45CA7A2A91D47F001CB81E /* SceneDelegate.swift in Sources */,
 			);
